@@ -97,7 +97,8 @@ class test_Amenity_BaseModel(unittest.TestCase):
         self.assertTrue(user_1.created_at <= user_2.created_at)
         self.assertTrue(user_2.created_at <= user_3.created_at)
         self.assertNotEqual(user_1.created_at, user_2.created_at)
-        self.assertNotEqual(user_1.created_at, user_3.created_at)
+
+self.assertNotEqual(user_1.created_at, user_3.created_at)
         self.assertNotEqual(user_3.created_at, user_2.created_at)
 
     def test_str_method(self):
